@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>回文か判定しよう！！！</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <h1>回文か判定しよう</h1>
 <div id="app">
+    <h2>回文を書いてみよう
+    </h2>
     <input v-model="message" type="text" class="form-control">
     <button v-on:click="reverseMessage">{{h}}</button>
+    <h3>得点</h3>
     <p>{{point}}</p>
+    <h3>入力した回文</h3>
     <p>{{list}}</p>
+</div>
+<div>
+  <h2>共有する</h2>
+  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large"></a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
   <script src="https://unpkg.com/vue"></script>
   <script src="main.js" type="text/javascript"charset="UTF-8"></script>
